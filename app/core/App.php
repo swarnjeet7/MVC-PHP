@@ -13,7 +13,7 @@ class App {
             unset($url[0]);
         }
 
-        require_once dirname(dirname(__FILE__)).'/controllers/' . $this->controller . '.php';
+        require_once dirname(dirname(__FILE__)).'/controllers/' . ucfirst($this->controller) . '.php';
 
         $this->controller = new $this->controller;
 

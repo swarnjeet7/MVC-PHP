@@ -2,8 +2,8 @@
 
 class Home extends Controller {
     public function index($arg1 = '', $arg2 = '') {
+		$this->layout = "index";
+		$this->view('home');
+	}
 
-        $this->view('home/home');
-        $this->layout("index");
-    }
 }

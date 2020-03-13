@@ -14,7 +14,7 @@
     <?php $this->element('header'); ?>
 
     <main>
-        <?php require_once dirname(__FILE__) .''. $content_for_layout; ?>
+        <?php //require_once $content_for_layout; ?>
     </main>
 
 </div>
